@@ -21,7 +21,7 @@ namespace Tyuiu.NefedovIS.Sprint5.Task0.V24
 
             string res = ds.SaveToFileTextData(x);
 
-            Console.WriteLine("Файл" + res);
+            Console.WriteLine("Файл " + res);
             Console.WriteLine("Создан!");
             Console.ReadKey();
         }
