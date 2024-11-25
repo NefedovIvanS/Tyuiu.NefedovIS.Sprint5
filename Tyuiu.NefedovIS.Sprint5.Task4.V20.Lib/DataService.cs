@@ -8,7 +8,7 @@ namespace Tyuiu.NefedovIS.Sprint5.Task4.V20.Lib
         {
             string strX = File.ReadAllText(path);
             double x = double.Parse(strX, CultureInfo.InvariantCulture);
-            double res = Math.Round(Math.Pow(((Math.Pow(x,2))/(Math.Sin(x))), 3), 2);
+            double res = Math.Round(Math.Pow(((Math.Pow(x,2))/(Math.Sin(x))), 3), 3);
             return res;
         }
     }
