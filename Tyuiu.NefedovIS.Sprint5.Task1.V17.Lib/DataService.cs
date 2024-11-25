@@ -15,12 +15,14 @@ namespace Tyuiu.NefedovIS.Sprint5.Task1.V17.Lib
                 y = Math.Round(2 * x - 4 + (2 * x - 1) / (Math.Sin(x) + 1), 2);
                 strY = Convert.ToString(y);
 
-                if (Math.Sin(x) + 1 == 0) {
-                    File.AppendAllText(path, 0 + Environment.NewLine);
+                if (x != stopValue) {
+                    File.AppendAllText(path, strY + "\n");
+                    Console.WriteLine(strY);
                 }
                 else
                 {
-                    File.AppendAllText(path, strY + Environment.NewLine);
+                    File.AppendAllText(path, strY);
+                    Console.Write(strY);
                 }
 
             }
