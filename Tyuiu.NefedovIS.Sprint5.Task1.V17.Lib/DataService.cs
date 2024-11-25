@@ -16,7 +16,7 @@ namespace Tyuiu.NefedovIS.Sprint5.Task1.V17.Lib
             }
             double y;
             string strY;
-            for (int x = startValue; x  < stopValue; x++)
+            for (int x = startValue; x  <= stopValue; x++)
             {
                 y = Math.Round(2 * x - 4 + (2 * x - 1) / (Math.Sin(x) + 1), 2);
                 strY = Convert.ToString(y);
