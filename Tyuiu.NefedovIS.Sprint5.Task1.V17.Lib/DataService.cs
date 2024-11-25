@@ -7,6 +7,12 @@ namespace Tyuiu.NefedovIS.Sprint5.Task1.V17.Lib
         public string SaveToFileTextData(int startValue, int stopValue)
         {
             string path = Path.Combine(Path.GetTempPath(), "OutputFileTask1.txt");
+            FileInfo fileInfo = new FileInfo(path);
+            bool fileExists = fileInfo.Exists;
+            if (fileExists)
+            {
+                File.Delete(path);
+            }
             double y;
             string strY;
             string s = "";
@@ -17,12 +23,12 @@ namespace Tyuiu.NefedovIS.Sprint5.Task1.V17.Lib
 
                 if (x != stopValue) {
                     File.AppendAllText(path, strY + "\n");
-                    Console.WriteLine(strY);
+                    //Console.WriteLine(strY);
                 }
                 else
                 {
                     File.AppendAllText(path, strY);
-                    Console.Write(strY);
+                    //Console.Write(strY);
                 }
 
             }
