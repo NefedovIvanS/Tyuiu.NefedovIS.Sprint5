@@ -16,7 +16,6 @@ namespace Tyuiu.NefedovIS.Sprint5.Task1.V17.Lib
             }
             double y;
             string strY;
-            string s = "";
             for (int x = startValue; x  < stopValue; x++)
             {
                 y = Math.Round(2 * x - 4 + (2 * x - 1) / (Math.Sin(x) + 1), 2);
@@ -33,7 +32,7 @@ namespace Tyuiu.NefedovIS.Sprint5.Task1.V17.Lib
                 }
 
             }
-            return s;
+            return path;
         }
     }
 }
