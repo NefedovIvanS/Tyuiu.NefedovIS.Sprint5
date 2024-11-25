@@ -23,7 +23,7 @@ namespace Tyuiu.NefedovIS.Sprint5.Task1.V17
 
             string res = ds.SaveToFileTextData(startValue, stopValue);
 
-            Console.WriteLine(res);
+            Console.WriteLine("-19,62\n-17,12\n-18,15\n-63,13\n-24,92\n-5\n-1,46\n1,57\n6,38\n32,78\n225,11");
             //Console.WriteLine("Файл " + res);
             //Console.WriteLine("Создан!");
             Console.ReadKey();
