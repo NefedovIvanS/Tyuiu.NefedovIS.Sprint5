@@ -7,21 +7,21 @@ namespace Tyuiu.NefedovIS.Sprint5.Task1.V17
         {
             DataService ds = new DataService();
 
-            int start = -5;
-            int stop = 5;
+            int startValue = -5;
+            int stopValue = 5;
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************\n");
 
-            Console.WriteLine($"start = {start}");
-            Console.WriteLine($"stop = {stop}");
+            Console.WriteLine($"start = {startValue}");
+            Console.WriteLine($"stop = {stopValue}");
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(start, stop);
+            string res = ds.SaveToFileTextData(startValue, stopValue);
 
             Console.WriteLine(res);
             //Console.WriteLine("Файл " + res);
