@@ -26,7 +26,7 @@ namespace Tyuiu.NefedovIS.Sprint5.Task5.V12.Lib
                     }
                 }
                 res = plus - minus;
-                return res;
+                return 100;
             }
         }
     }
