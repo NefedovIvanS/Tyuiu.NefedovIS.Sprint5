@@ -20,6 +20,7 @@ namespace Tyuiu.NefedovIS.Sprint5.Task5.V12
 
             double res = ds.LoadFromDataFile(path);
             Console.WriteLine(res);
+            Console.WriteLine(100);
             Console.ReadKey();
         }
     }
