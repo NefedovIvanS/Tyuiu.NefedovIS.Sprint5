@@ -1,4 +1,5 @@
-namespace Tyuiu.NefedovIS.Sprint5.Task4.V20.Test
+using Tyuiu.NefedovIS.Sprint5.Task7.V26.Lib;
+namespace Tyuiu.NefedovIS.Sprint5.Task7.V26.Test
 {
     [TestClass]
     public class DataServiceTest
@@ -6,7 +7,7 @@ namespace Tyuiu.NefedovIS.Sprint5.Task4.V20.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask4");
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask7");
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
