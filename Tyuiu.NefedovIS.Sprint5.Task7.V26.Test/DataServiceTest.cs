@@ -7,7 +7,7 @@ namespace Tyuiu.NefedovIS.Sprint5.Task7.V26.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask7");
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask7"); //s
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
